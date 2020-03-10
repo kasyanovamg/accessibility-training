@@ -129,7 +129,41 @@
   margin-bottom: .5rem;
 }
 
+.control > *:focus, a:focus {
+  border: 2px solid red;
+}
 
+.button.is-info {
+  background-color: #0C476E;
+}
+
+.subtitle.is-5 {
+  color: #212121;
+}
+.hero.is-info {
+  background-color: #0B4D7A;
+}
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0A5485;
+}
+.tag:not(body).is-danger {
+  background-color: #A30021;
+}
+.tag:not(body).is-primary {
+  color: #292929
+}
+.tag:not(body).is-success, .help.is-success {
+  color: #212121;
+}
+.has-text-grey-light {
+  color: #4D4D4D!important;
+}
+.help.is-danger {
+  color: #A30021;
+}
+.footer-links {
+  color: #1A4A99;
+}
 @media screen and (max-width: 1087px) {
   .navbar-menu {
     background-color: #888;

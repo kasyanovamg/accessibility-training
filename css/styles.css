@@ -129,10 +129,6 @@
   margin-bottom: .5rem;
 }
 
-.control > *:focus, a:focus {
-  border: 2px solid red;
-}
-
 .button.is-info {
   background-color: #0C476E;
 }
@@ -164,6 +160,37 @@
 .footer-links {
   color: #1A4A99;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+.visually-hidden-links {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+.visually-hidden-links:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+
+.focus-element:focus {
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: 0 0 2px 2px #ff0000, 0 0 2px 2px #ff0000;
+}
+
 @media screen and (max-width: 1087px) {
   .navbar-menu {
     background-color: #888;
@@ -209,4 +236,27 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumbs li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumbs li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumbs li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }

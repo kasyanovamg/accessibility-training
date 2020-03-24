@@ -260,3 +260,18 @@ ul.breadcrumbs li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+
+.soc > a {
+  color: #174287;
+}
+
+a:hover {
+  color: #363636;
+  text-decoration: underline;
+}
+
+#politeArea {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}

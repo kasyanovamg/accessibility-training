@@ -48,6 +48,36 @@
                   <span>Home</span>
                 </button>
               </span>
+            <div class="navbar-item">
+                <button class="button is-white is-outlined focus-element" type="button" id="admin-nav" aria-expanded="false" aria-haspopup="true" aria-controls="menu1">
+                  <span class="icon">
+                    <i class="fas fa-sync-alt"></i>
+                  </span>
+                  <span>Administration</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+              <ul id="menu1" role="menu"  aria-labelledby="admin-nav" hidden>
+                <li role="none">
+                  <a role="menuitem" tabindex="-1" href="#about">Administration</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" tabindex="-1" href="#key-features">Team Settings</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" tabindex="-1" href="#upcoming-events">Manage Your Team</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" tabindex="-1" href="#forum">Invitations</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" tabindex="-1" href="#contact-us">Authentication</a>
+                </li>
+
+              </ul>
+              </div>
             <span class="navbar-item">
                 <button class="button is-white is-outlined focus-element" type="button">
                   <span class="icon">
@@ -190,7 +220,7 @@
               &lt;title&gt;Hello World&lt;/title&gt;
               &lt;/head&gt;
               &lt;body&gt;
-              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Donec viverra nec nulla vitae mollis.&lt;/p&gt;
               &lt;/body&gt;
           &lt;/html&gt;
@@ -331,16 +361,17 @@
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <div role="tablist" aria-label="List of topics">
         <button role="tab" data-target="pane-1" id="tab1" class="is-active" aria-controls="pane-1" aria-selected="true">
-            <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
-            Pictures
+          <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
+          Pictures
         </button>
         <button role="tab" data-target="pane-3" id="tab3" aria-controls="pane-3" aria-selected="false" tabindex="-1">
-            <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
-            Team
+          <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
+          Team
         </button>
-        <button role="tab" data-target="pane-4" id="tab4" aria-controls="pane-4" aria-selected="false" tabindex="-1" data-deletable="">
-            <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
-            Video
+        <button role="tab" data-target="pane-4" id="tab4" aria-controls="pane-4" aria-selected="false" tabindex="-1"
+                data-deletable="">
+          <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
+          Video
         </button>
       </div>
     </div>
@@ -1310,5 +1341,6 @@
 <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 <script async src="js/custom.js"></script>
 <script async src="js/tab-navigation.js"></script>
+<script async src="js/nav.js"></script>
 </body>
 </html>

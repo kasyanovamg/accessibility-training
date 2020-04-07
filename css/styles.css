@@ -293,3 +293,22 @@ button[role="tab"].is-active {
   background-color: white;
   color: #024988;
 }
+
+#menu1 {
+  background-color: white;
+  border-radius: 0 0 5px 5px ;
+  top: 60px;
+  line-height: 40px;
+}
+
+#menu1 > li[role="none"]  {
+  padding: 0 10px;
+}
+
+ul[role="menu"] [role="separator"] {
+  padding: 0.25em;
+  border: 2px solid white;
+  background-image: url(../img/separator.png);
+  background-position: center;
+  background-repeat: repeat-x;
+}

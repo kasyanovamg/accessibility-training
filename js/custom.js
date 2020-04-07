@@ -7,14 +7,14 @@
   });
 })();
 
-document.querySelectorAll("#nav li").forEach(function(navEl) {
+document.querySelectorAll('[role="tab"]').forEach(function(navEl) {
   navEl.onclick = function() {
     toggleTab(this.id, this.dataset.target);
   };
 });
 
 function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+  var navEls = document.querySelectorAll('[role="tab"]');
 
   navEls.forEach(function(navEl) {
     if (navEl.id == selectedNav) {

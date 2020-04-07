@@ -275,3 +275,21 @@ a:hover {
   text-align: center;
   font-size: 20px;
 }
+
+div[role="tablist"] {
+  margin: 0 auto;
+}
+
+button[role="tab"] {
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+button[role="tab"].is-active {
+  background-color: white;
+  color: #024988;
+}
